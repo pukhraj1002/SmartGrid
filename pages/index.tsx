@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { devices } from "@/lib/devices"
 import ReactCardFlip from "react-card-flip"
-
+import Link from "next/link"
 
 
 
@@ -151,6 +151,19 @@ export default function Home() {
             </div>
           </div>
         </main>
+        <footer className="border-t py-6 mt-auto">
+        <div className="container mx-auto text-center text-sm text-muted-foreground px-4">
+          Build by{" "}
+          <Link
+            href="https://bento.me/pukhraj2004"
+            className="font-medium text-foreground hover:text-primary transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pukhraj Kushwah
+          </Link>
+        </div>
+      </footer>
       </div>
     </div>
   )
